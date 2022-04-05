@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Selectable Cities</title>
+        <style>
+            li {
+                display: inline-block;
+                cursor: pointer;
+                padding: 10px;
+                }
+            ul {
+                 padding:0;
+                  }
+        </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="select-towns.js"></script>
+    </head>
+    <body>
+        <h2>Cities</h2>
+            <ul id="items">
+                <li>Stockholm</li>
+                <li>Göteborg</li>
+                <li>Malmö</li>
+                <li>Uppsala</li>
+                <li>Umeå</li></ul>
+                <button id="showTownsButton">Show Cities</button>
+                <div id="selectedTowns"></div>
+                
+    </body>
+    <script>
+        $(() => attachEvents());
+    
+        function attachEvents(){
+
+        $("#showTownsButton").on("click",show);
+
+        $("#items li").on("click",select);
+
+        function select(){
+
+        
+
+            if($(this).attr("data-selected"))
+
+            {
+
+                $(this).removeAttr("data-selected")
+
+                $(this).css("background" ," ")
+
+            }
+
+            else
+
+            {
+
+                $(this).attr("data-selected","true");
+
+                $(this).css("background-color","#DDD");    
+
+            }
+
+        }
+
+        function show(){
+
+            let selected_towns=$("#items li[data-selected=true]")
+
+            .toArray()
+
+            .map(e=>e.textContent)
+
+                
+
+            $("#selectedTowns").text("selected towns:"+selected_towns.join(","));
+
+        }
+
+
+
+        }
+    </script>
+    
+            
+
+
+    
+    </html>

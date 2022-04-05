@@ -1,0 +1,42 @@
+body {
+    Margin:0px;
+    Padding:0px;
+    background-color: #CCCCCC;
+}
+    ul{
+       background-color:#444;
+       text-align: center;
+       padding :0px;
+       Margin:0px;
+       list-style:none;
+    }
+       li {
+        
+        display:inline-block;
+        font-size:24px;
+        line-height:40px;
+        height:40px;
+        Padding:15px 30px;
+       }
+         a{
+            text-align: center; 
+            text-decoration:none;
+            color: #ffffff;
+
+         }
+         h1{
+            text-size-adjust: 28px;
+        
+        } 
+        p{
+            text-size-adjust: 24px;
+        }
+        
+        section{
+            margin-left: 20px;
+        }
+        footer {
+        background-color:  #444;
+        color: #fff;
+        text-align: center;
+}

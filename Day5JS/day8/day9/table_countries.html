@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Countries Table</title>
+ <style>
+        td, th
+            {
+            background: #DDD;
+            padding: 5px 10px; 
+            }
+        input[type='text']
+            { 
+            width: 60px;
+            }
+ </style>
+ <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="initialize-table.js"></script>
+</head>
+<body>
+<table id="countriesTable">
+    <tr>
+        <th>Country</th>
+        <th>Capital</th>
+        <th>Action</th>
+    </tr>
+    <tr class="td">
+    <td><input type="text" id="newCountryText" /></td>
+    <td><input type="text" id="newCapitalText" /></td>
+    <td><a href="#" id="createLink">[Create]</a></td>
+    </tr>
+</table>
+ 
+
+<script>
+   
+   
+//    //$(document).ready(function(){
+//    // $('a').click(function(){
+//             $('#countriesTable').append('<tr class="child"><td>sweden</td></tr>');
+//         });
+
+//    });
+    $(() => initializeTable());
+    function initializeTable(){
+        $('a').click(function(){
+            addRow();
+            fixRowLinks();
+            //$('#countriesTable').append('<tr class="child"><td>sweden</td></tr>');
+        });
+
+        
+    }
+    function addRow(){
+       // $('#countriesTable').append('<tr class="child"><td>sweden</td><td>stockholm</td>
+            //<td><a href="#" id="createLink">[Create]</a></td></tr>'); 
+            $('table').append([
+                                '<tr>',
+                                    '<td>sweden</td>',
+                                    '<td>Stockholm</td>',
+                                    '<td><a href="#">[up]</a><a href="#">[Down]</a><a href="#">[Delete]</a></td>',
+                                '</tr>' ]);
+                                
+                 $('table').append([
+                                    '<tr>',
+                                        '<td>Germany</td>',
+                                        '<td>Berlin</td>',
+                                        '<td><a href="#">[up]</a><a href="#">[Down]</a><a href="#">[Delete]</a></td>',
+                                    '</tr>' ]); 
+                                    fixRowLinks();
+                 $('table').append([
+                                    '<tr>',
+                                        '<td>France</td>',
+                                        '<td>Paris</td>',
+                                        '<td><a href="#">[up]</a><a href="#">[Down]</a><a href="#">[Delete]</a></td>',
+                                    '</tr>' ]); 
+                                    fixRowLinks();
+
+    }
+    function fixRowLinks()
+     {
+            // Show all links in the table
+            $('#countriesTable a').css('display', 'inline');
+ 
+            // Hide [Up] link in first table data row
+            let tableRows = $('#countriesTable tr');
+            $(tableRows[2]).find("a:contains('Up')")
+                    .css('display', 'none');
+ 
+            // Hide the [Down] link in the last table row
+            $(tableRows[tableRows.length - 1]).find("a:contains('Down')")
+                    .css('display', 'none');
+    }
+
+
+    </script>
+
+</body>
+</html>

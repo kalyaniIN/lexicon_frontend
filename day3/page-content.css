@@ -1,0 +1,15 @@
+h1{
+    text-size-adjust: 28px;
+
+} 
+p{
+    text-size-adjust: 24px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #cccccc;
+}
+section{
+    margin-left: 20px;
+}

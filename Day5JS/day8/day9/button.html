@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Title</title>
+ <link rel="stylesheet" href="link_buttons.css" />
+ <script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="link_buttons.js"></script>
+</head>
+<body onload="attachEvents()">
+ <a class="button">Stockholm</a>
+ <a class="button">Malmö</a>
+ <a class="button">Göteborg</a>
+</body>
+    <script>
+        function attachEvents() {
+
+        $("a.button").on("click",function attacheventlistener(){
+
+        $(".selected").removeClass("selected");
+
+        $(this).addClass("selected");
+
+});
+
+};
+    </script>
+</html>

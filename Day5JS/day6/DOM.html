@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script>
+        //getElementById()
+        function getCube(){
+            var number=document.getElementById("number").value;
+            alert(number*number*number)
+
+        }
+        function totalElements{
+            var genders=document.getElementsByName("gender");
+            alert("total genders:" + genders.length);
+        }
+        function countH3{
+            var h3_count=document.getElementsByTagName("h3");
+            alert("total count of h3:" + h3_count);
+
+        }
+        function countH2{
+            var h2_count=document.getElementsByTagName("h2");
+            alert("total count of h3:" + h2_count);
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+
+    <!--getElementById()-->
+    <form>
+        Enter no:<input number="text" id="number" value="number"><br>
+        <input type="button" value="cube" onclick="getCube()">
+    </form>
+    <!--getElementByName()-->
+    <form>
+        Male:<input type="radio" name="gender" value="male"><br>
+        Feale:<input type="radio" name="gender" value="female"><br>
+        <input type="button" value="teotalgenders" onclick="totalElements()">
+    </form>
+    <!--getElementsByTagName-->
+    <h2>Iam h2</h2>
+    <h2>Iam h2</h2>
+    <h3>Iam h3</h3>
+    <h3>Iam h3</h3>
+    <h3>Iam h3</h3>
+
+    <button type="button" onClick="countH2()">Count H2</button>
+    <button type="button" onClick="countH3()">Count H3</button>
+
+    <script>
+
+    </script>
+
+    
+</body>
+</html>

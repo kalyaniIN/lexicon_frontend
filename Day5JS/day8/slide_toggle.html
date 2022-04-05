@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide toggle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        #toggle ,.slide
+        {
+            background-color: blueviolet;
+            padding: 5px;
+            color: brown;
+        }
+        .slide
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="toggle">This is for scrolling up and down</div>
+    <p class="slide">scroll me ub and down</p>
+    <p class="slide">scroll me up and down again</p>
+
+    
+</body>
+    <script>
+        $(document).ready(function(){
+            $("#toggle").click(function(){
+                $ (".slide").slideToggle();
+
+            });
+        });
+    </script>
+</html>

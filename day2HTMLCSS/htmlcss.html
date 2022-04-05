@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS</title>
+    <link rel="stylesheet" href="ecternal.css"><link>
+    <style>
+        table,tr,td,th{
+            border:2px solid black;
+            padding:2px;
+            border-spacing: 2px;
+        }
+        tr:nth-child(even){
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Student info</caption>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th style="width:20%">Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>xyz</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>abc</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <th colspan="2">Total</th>
+            <th>Yes</th>
+        </tr>
+    
+            <th rowspan="2">Student info</th>
+        
+            <td>Testing</td>
+        </tr>
+        <tr>
+            <td> data 1</td>
+        </tr>
+    </table>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: blueviolet;">
+            <col span="3" style="background-color:aqua;">
+        </colgroup>
+        <tr>
+            <th>MOn</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>12</td>
+        </tr>
+    </table>
+    <!--HTML lists-->
+    <!--ordered &unordered list-->
+    <ol type="a">
+        <li>coffe</li>
+        <li>tea</li>
+        <li>hot</li>
+    </ol>
+    <ul style="list-style-type: none">
+        <li>coffe</li>
+        <li>tea</li>
+        <li>hot</li>
+
+    </ul>
+    <ul>
+        <li>Coffee types
+        
+            <ol style="padding:20px">
+                <li>Dark coffee</li>
+                <li>filter coffee</li>
+
+
+        </ol>
+        </li>
+
+        </li>
+        <li>Milkshakes
+        
+            <ol>
+                <li>Strabwrry</li>
+                <li>Choclate</li>
+                <li>Mango</li>
+
+
+            </ol>
+        </li>
+    </ul>
+    <!--description list-->
+    <dl>
+        <dt>coffee</dt>
+        <dd>Its a coffee</dd>
+        <dt>milk</dt>
+        <dd>It is a source of calcium</dd>
+    </dl>
+    <!--inline and block level elemnts-->
+<p>Hello,how are you</p>
+<h1>hej</h1>
+<p>hello</p><span>how are you?</span>
+
+<!--Html iframe-->
+<iframe src="basic.html"  name="frame1"title="frame1">
+
+</iframe>
+<p><a href="https://ww.google.com" target="frame1">click here</a> </p>
+</body>
+<!--css
+external css
+internal css
+inline css-->
+
+<!--external css-->
+
+<!--borders-->
+<p style="border:3px  solid black;border-radius: 20px;">hello there</p>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <sript>
+        
+ 
+        function Point(x,y,x1,y1)
+        {
+            this.x = x;
+            this.y = y;
+            this.x1 = x1;
+            this.y1 = y1;
+            this.distanceTo = function()
+             {
+                return Math.sqrt((Math.pow(this.x1-this.x, 2))+(Math.pow(this.y1-this.y, 2)));
+            }
+         }
+    
+        var points = new Point (10,100,25,5);
+        console.log(points.distanceTo());
+        document.write(points.distanceTo());
+
+    </sript>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!--Traverse up Html document
+    parent(),parents(),parentsUntill()-->
+    <div class="a1">
+        <div>Great grand parent
+            <ul>ul grand parent
+                <li>
+                    parent<span>Child</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!--Traverse down
+    children(),find()-->
+    <div>
+        divmain
+        <p id="p1">childr
+            <p>Grandchild</p>
+        </p>
+    </div>
+    <!--siblings(),next(),nextall(),nextUntill(),prev(),prevAll(),prevUtill()-->
+    <div>
+        <p>p
+            <h2>h2</h2>
+            <h3>h3</h3>
+        </p>
+    </div>
+    
+</body>
+    <script>
+        $(document).ready(function(){
+            //$("span").parent().css({"color":"red" ,"border":"3px solid red"});
+            $("div").children("p.p1").css({"color":"green" ,"border":"6px solid red"});
+        });
+    </script>
+</html>

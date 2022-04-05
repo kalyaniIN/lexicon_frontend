@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <p>Jquer practice</p>
+    <ul id="item">
+        <li id="'first"> coffee
+            <a href="https://www.google.com">Goggle</a><br>
+            <a href="https://www.w3schools.com">W3</a><br>
+           </li>
+        <li>tea</li>
+        <li>Milk</li>
+    </ul>
+    <button>click me</button>
+    
+</body>
+    <script>
+        $(document).ready(function(){
+            $("button").onClick(function(){
+                 //$("#item > li:last").text('capaccino').css('color','blue');
+                 $("#first").find("a").css('color','red');
+
+
+            });
+           
+        });
+    </script>
+</html>

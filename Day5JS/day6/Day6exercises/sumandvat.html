@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <p>sum of prices:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var prices = ["1.20", "2.60", "3.50"];
+      
+         let sum=0;
+         for (let i = 0; i < prices.length; i++) 
+         {
+            sum += parseInt(prices[i]);
+         }
+
+         var vat= (sum/100)*20;
+       console.log(sum);
+      
+       document.write(sum);
+       document.write("<br>")
+
+       console.log(vat);
+       document.write(vat);
+       
+
+     
+
+ 
+</script>
+</body>
+</html>

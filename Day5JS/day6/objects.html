@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //alert
+        function msg_alert(){
+        window.alert("hello this is alert");
+        }
+        //confirm
+        function msg_confirm()
+        {
+            var v=confirm("are you sure");
+            if(v== true)
+            {
+                alert("ok");
+            }
+            else{
+                alert("cancel");
+            }
+           
+        }
+        //open
+        function msg_open(){
+        window.open("https://www.google.com");
+        }
+        
+    </script>
+</head>
+<body>
+    <!--window object
+    alert(),confirm(),prompt(),open(),close()...-->
+    alert:<input type="button" value="click" onclick="msg_alert()"><br><br>
+    confirm:<input type="button" value="delete" onclick="msg_confirm()"><br><br>
+    open:<input type="button" value="oen" onclick="msg_open()"><br><br>
+
+
+
+    
+</body>
+</html>

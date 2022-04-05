@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <p id="test">This is a demo of <b>Jquery dom</b>manipulation</p>
+    <button type="button" id="id1">Show text</button>
+    <button type="button" id="id2">Show html</button>
+    <form>
+        Name:<input type="text" id="i1" value="show me">
+    </form>
+    <button type="button" id="id2">Show html</button>
+
+
+</body>
+    <script>
+        $(document).ready(function(){
+            $("#id1").click(function(){
+                alert("the text of <p> element is " + $("#test").text());
+            });
+        });
+            $("#id2").click(function(){
+       
+                alert("the text of <p> element is " + $("#test").html());
+                });
+            $("#id2").click(function(){
+       
+                alert("the text of <p> element is " + $("#test").val());
+                });
+            });
+        });
+    </script>
+</html>
